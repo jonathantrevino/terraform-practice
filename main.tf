@@ -3,12 +3,12 @@ provider "aws" {
     region = "us-east-1"
 }
 
-// deploy a single ec2 instance
-resource "aws_instance" "example" {
-    ami             = "ami-40d28157"
-    instance_type   = "t2.micro"
+// temporarily deleting a single ec2 instance
+# resource "aws_instance" "example" {
+#     ami             = "ami-40d28157"
+#     instance_type   = "t2.micro"
 
-    tags = {
-        Name = "terraform-example"
-    }
-}
+#     tags = {
+#         Name = "terraform-example"
+#     }
+# }
